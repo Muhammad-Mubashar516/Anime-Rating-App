@@ -1,0 +1,94 @@
+/* Full page background */
+.d1 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f9fafc;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  max-width: 1100px;   /* Navbar center me aur limit ke andar */
+  background: #0077ff;
+  padding: 12px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;   /* thoda rounded effect */
+  margin-top: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #e0e0e0;
+}
+
+/* Content container */
+.d2 {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Heading */
+.h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* Info text */
+.p1 {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Logout button */
+.b1 {
+  background: #0077ff;
+  border: none;
+  color: #fff;
+  font-size: 0.95rem;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.b1:hover {
+  background: #005fcc;
+}

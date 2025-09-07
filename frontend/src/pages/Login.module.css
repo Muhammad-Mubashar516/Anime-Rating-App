@@ -1,0 +1,52 @@
+/* Purani classes .d1b, .k1, etc. ko proper names se replace kar diya gaya hai */
+.loginContainer {
+     max-width: 500px;
+  margin: 100px auto; 
+  border: 2px solid black;
+  border-radius: 20px;
+  background: transparent;
+}
+.loginHeader{
+    margin-left:150px;
+    cursor: pointer;
+}
+.loginGroup{
+    margin-left: 100px;
+    cursor: pointer;
+}
+.loginLabel{
+    font-size: 30px;
+    cursor: pointer;
+}
+.loginInput{
+    height: 50px;
+    width: 300px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
+.loginButton{
+    margin-left: 100px;
+    background-color: #a3c775;
+    height: 40px;
+    width: 300px;
+    font-size:30px;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    cursor: pointer;
+}
+
+.don {
+  height: 100vh; 
+  width: 100vw; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  background-image: url('/images/2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; 
+}
