@@ -35,6 +35,7 @@ const Home = () => {
                     <li><Link to="/" className={styles.link}>Home</Link></li>
                     <li><Link to="/Signup" className={styles.link}>Signup</Link></li>
                     <li><Link to="/Login" className={styles.link}>Login</Link></li>
+                    <li><Link to="/papers" className={styles.link}>papers</Link></li>
                 </ul>
             </nav>
 

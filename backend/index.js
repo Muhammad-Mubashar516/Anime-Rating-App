@@ -7,7 +7,8 @@ const bcrypt = require("bcrypt");
 const connectDB = require("./config/dataBase");
 const User = require("./models/userModel");
 const userRoutes = require("./routes/userRoutes");
-
+const paperRoutes = require("./routes/paperRoutes");
+const errorHandler = require("./middleware/errorMiddleware");
 connectDB();
 const app = express();
 
@@ -20,6 +21,13 @@ app.use(cors({
 
 app.use(express.json());
 app.use("/api/users", userRoutes);
+app.use("/api/papers", paperRoutes);
+
+app.use((req, res, next) => {
+  res.status(404).json({ message: "Route not found" });
+});
+app.use(errorHandler);
+
 
 const server = http.createServer(app);
 const PORT = process.env.PORT || 8000;

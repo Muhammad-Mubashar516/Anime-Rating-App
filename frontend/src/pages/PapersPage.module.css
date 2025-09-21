@@ -1,0 +1,104 @@
+.l1 {
+  background-color: #0077ff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Container of all cards */
+.d3 {
+  display: flex;
+  flex-wrap: wrap;   /* cards agle line me chale jayenge */
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* Each card */
+.d4 {
+  width: 300px;       /* fix width */
+  height: 300px;      /* fix height */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  overflow: hidden;   /* extra content cut ho jayega */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 45px;   /* 👈 jagah ban gayi cross ke niche */
+}
+
+/* Delete button */
+.b1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+}
+
+/* Title */
+.t1 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 5px 0;
+  white-space: nowrap;        
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Category */
+.c0 {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 3px 0;
+}
+
+/* Author */
+.a1 {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #777;
+  margin: 3px 0;
+}
+
+/* Content (truncate) */
+.c2 {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 8px;
+  flex-grow: 1;             
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* Like/Unlike/Views buttons */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.actions button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.actions span {
+  font-size: 0.9rem;
+  color: #555;
+}
